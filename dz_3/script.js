@@ -70,10 +70,9 @@ ulContainer.addEventListener('click', function(e){
 // а затем событие всплывает до элемента <ul>, где срабатывает обработчик события, связанный с текстом из 3 задания.
 
 // Задание 7
-const ulAllContainer = document.querySelectorAll('li')
+const liAllContainer = document.querySelectorAll('li')
 
-ulAllContainer.forEach((item, index) => {
-    console.log(index + 1 % 2 === 0)
+liAllContainer.forEach((item, index) => {
     if((index + 1) % 2 === 0){
         item.style.background = 'lightblue'
     }
